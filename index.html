@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="css/index.css" />
+    <title>LyricsSearch</title>
+</head>
+
+<body>
+    <header>
+        <h1>Пошук тексту музичних композицій</h1>
+
+        <form id="form">
+            <input type="text" id="search" placeholder="Знайти текст" />
+            <button>Пошук</button>
+        </form>
+    </header>
+
+    <div id="result" class="container">
+        <p>Результати пошуку</p>
+    </div>
+
+    <div id="more" class="container centered"></div>
+
+    <button id="start-btn">Start recording</button>
+    <button id="stop-btn" disabled>Stop recording</button>
+    
+    <!-- List item to store the recording files so they can be played in the browser -->
+    <h2>Stored Recordings</h2>
+    <ul id="recordingslist"></ul>
+    <script src="js/index.js"></script>
+    <script src="js/recorder.js"></script>
+</body>
+
+</html>
